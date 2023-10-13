@@ -2,12 +2,12 @@
 
 Para comenzar un proyecto en react con Vite realizaremos los siguientes pasos:
 
-1. Ejecutar comando para iniciar proyecto con Vite
+## 1. Ejecutar comando para iniciar proyecto con Vite
    yarn create vite
    o
    npm create vite
-2. Ejecutar yarn o npm i para instalar las dependencias
-3. Establecer un sistema de carpetas para un mejor orden, recomiendo el siguiente
+## 2. Ejecutar yarn o npm i para instalar las dependencias
+## 3. Establecer un sistema de carpetas para un mejor orden, recomiendo el siguiente
    - assets: Se guardan todos los recursos como imagenes, videos etc.
    - components:
      - common: Componentes que se usan en el proyecto. Son altamente relacionados con el modelo de negocio
@@ -27,7 +27,7 @@ Para comenzar un proyecto en react con Vite realizaremos los siguientes pasos:
      - hooks: Hooks que se pueden usar a lo largo del proyecto
      - Constanst: Contantes que querras usar a lo largo de proyecto
      - data: Datos en formato json o ts o tsx que querrar que funjan como datos estaticos en el proyecto.
-4. Es comun usar rutas en un proyecto React, por lo que instalamos react-router-dom 
+## 4. Es comun usar rutas en un proyecto React, por lo que instalamos react-router-dom 
    1. yarn add react-router-dom
    2. En el archivo main.tsx colocar 
    ```
@@ -35,7 +35,7 @@ Para comenzar un proyecto en react con Vite realizaremos los siguientes pasos:
       ...
    </BrowserRouter>
    ```
-5. Luego es una buena practica tener un lint de codigo, instalaremos el eslint y lo configuramos 
+## 5. Luego es una buena practica tener un lint de codigo, instalaremos el eslint y lo configuramos 
    1. yarn add eslint
    2. Ejecutar el siguiente comando en la consola: npx eslint --init
    3. Escoger la opcion "To check syntax and find problems"
@@ -91,5 +91,5 @@ Para comenzar un proyecto en react con Vite realizaremos los siguientes pasos:
        package-log.json
 
        ```
-6.  Firebase: 
+## 6.  Iniciar pruebas : 
   
