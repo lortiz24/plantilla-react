@@ -91,8 +91,8 @@ Para comenzar un proyecto en react con Vite realizaremos los siguientes pasos:
        package-log.json
 
        ```
-## 6.  Cofigurar testing en react
-# Instalación y configuracion de Jest + React Testing Library
+## 6.  Instalación y configuracion de Jest + React Testing Library
+
 ## En proyectos de React + Vite
 
 1. Instalaciones:
