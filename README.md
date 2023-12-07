@@ -141,3 +141,68 @@ import 'whatwg-fetch'; // <-- yarn add whatwg-fetch
 
 ****
   
+
+## 7.  Instalación y configuracion Redux toolki
+
+1. Instalar redux y redux toolkit con el siguiente comando
+
+```
+yarn add react-redux @reduxjs/toolkit
+```
+
+2. En src/store crear archivo store y configurar la store
+
+```
+import { configureStore } from "@reduxjs/toolkit";
+import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
+
+export const store = configureStore({
+  reducer: {
+    name: nameSlice.reducer,
+  },
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({
+      serializableCheck: false,
+    }),
+});
+
+export type RootState = ReturnType<typeof store.getState>;
+export type AppDispatch = typeof store.dispatch;
+export const useAppDispatch: () => AppDispatch = useDispatch;
+export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector;
+
+```
+
+3. En app colocar el provider
+
+```
+   <Provider store={store}>
+```
+
+4. Crear el slice 
+
+```
+import { createSlice } from "@reduxjs/toolkit";
+
+
+interface UiKaraoke {
+}
+
+const initialState: UiKaraoke = {
+  
+};
+export const nameSlice = createSlice({
+  name: "uiPage",
+  initialState,
+  reducers: {
+    onAction: (state /* action */) => {
+    },
+  },
+});
+
+export const {
+  onAction
+} = nameSlice.actions;
+
+```
+
