@@ -54,6 +54,18 @@ Para comenzar un proyecto en react con Vite realizaremos los siguientes pasos:
         1.   off: No validado
         2.   warn: Advertencia
         3.   error: Error
+    Te dejo unas reglas utiles por defecto
+
+    ```
+    {
+        'react/react-in-jsx-scope':'off',
+        '@typescript-eslint/no-unused-vars':'warn',
+        '@typescript-eslint/no-explicit-any':'warn',
+        '@typescript-eslint/no-unused-vars':'warn',
+        '@typescript-eslint/ban-ts-comment':'off'
+    }
+    
+    ```
    11. Ahora instalamos prettier
        1.  yarn add -D prettier
    12. Ahora creamos un archivo .prettierrc en el proyecto y aqui es donde colocaremos las reglas que queremos para cuando se formatee, es decir, si por ejemplo queremos que al formatear se agreguen los punto y coma al final, o si queremos que idente de una manera u otra, puedes buscar esas reglas en internet. Por el momento te dejo estas reglas para que las copies y pegues en el archivo que acabas de crear:
